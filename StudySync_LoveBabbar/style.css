@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	font-family: "Poppins", sans-serif;
+	/* background-color: #fbab7e;
+	background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%); */
+}
+.header {
+	width: 100%;
+	height: 100px;
+}
+.nav {
+	height: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+.logo a {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	
+}
+.logo-img {
+	height: 27px;
+	width: 27px;
+}
+.logo span {
+	font-size: 2rem;
+	font-weight: 600;
+	color: black;
+}
+
+.content-tag ul {
+	
+    display: flex;
+    gap: 1.5rem;
+}
+.content-tag ul li{
+	display: none;
+    list-style: none;
+    color: #718096;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 1s ease;
+    font-weight: 520;
+}
+.content-tag ul li:hover{
+    color: blue;
+}
+@media screen and (min-width:760px) {
+	.content-tag ul li{
+		display: flex;
+	}
+	
+}
+.contact-btn{
+	display: none;
+    background-color: blue;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+@media screen and (min-width:760px) {
+	.contact-btn{
+		display: block;
+	}
+	
+}
+.contact-btn a{
+    color: white;
+    font-size: 0.87rem;
+    font-weight: 500;
+    transition: 0.4s ease;
+    
+}
+.nav>.fa{
+	display: none;
+}
+@media screen and (max-width:768px) {
+	.nav>.fa{
+		display: block;
+		padding: 20px;
+		font-size: 22px;
+		
+	}
+	
+}
+.contact-btn:hover{
+    border: 1px solid black;
+    background:transparent;
+    a{
+        color: black;
+    }
+}
+

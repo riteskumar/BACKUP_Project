@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo">
+            <h2>TASK <img src="images/240_F_549387387_RCkqVtf2t5PbNYGQgQEHZMpFuHbpTvJz.jpg"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add task" list="task">
+                <button onclick="addItem()">ADD</button>
+                <datalist id="task">
+                    <option value="Codeforce 3 questions"></option>
+                    <option value="Javascript videos"></option>
+                    <option value="String in java"></option>
+                    <option value="College studies"></option>
+                </datalist>
+            </div>
+            <ul id="ListContainer">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>
